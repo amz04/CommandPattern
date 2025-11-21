@@ -1,6 +1,6 @@
 // File: TurnOnACCommand.java
 public class TurnOnACCommand implements Command {
-    private final AirConditioner ac;
+    private final AirConditioner ac; // receiver
 
     public TurnOnACCommand(AirConditioner ac) {
         this.ac = ac;

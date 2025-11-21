@@ -1,6 +1,6 @@
 // File: TurnOnLightCommand.java
 public class TurnOnLightCommand implements Command {
-    private final Light light;
+    private final Light light; // receiver
 
     public TurnOnLightCommand(Light light) {
         this.light = light;

@@ -1,7 +1,8 @@
-// File: Light.java
+// Receiver class: contains the real logic for controlling the light
 public class Light {
     private boolean isOn = false;
 
+    // Turn the light ON
     public void turnOn() {
         if (!isOn) {
             isOn = true;
@@ -11,6 +12,7 @@ public class Light {
         }
     }
 
+    // Turn the light OFF
     public void turnOff() {
         if (isOn) {
             isOn = false;

@@ -1,4 +1,4 @@
-// File: AirConditioner.java
+// Receiver class: contains real logic for the AC unit
 public class AirConditioner {
     private boolean isOn = false;
 

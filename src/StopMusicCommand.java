@@ -1,6 +1,6 @@
 // File: StopMusicCommand.java
 public class StopMusicCommand implements Command {
-    private final MusicPlayer player;
+    private final MusicPlayer player; // receiver
 
     public StopMusicCommand(MusicPlayer player) {
         this.player = player;

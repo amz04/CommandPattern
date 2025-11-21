@@ -1,4 +1,4 @@
-// File: DoorLock.java
+// Receiver class: handles locking and unlocking the door
 public class DoorLock {
     private boolean isLocked = true; // assume locked by default
 

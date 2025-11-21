@@ -1,6 +1,6 @@
 // File: UnlockDoorCommand.java
 public class UnlockDoorCommand implements Command {
-    private final DoorLock doorLock;
+    private final DoorLock doorLock; // receiver
 
     public UnlockDoorCommand(DoorLock doorLock) {
         this.doorLock = doorLock;

@@ -5,14 +5,15 @@ import java.util.concurrent.TimeUnit;
 
 public class CommandScheduler {
 
-    private final SmartHomeInvoker invoker;
-    private final ScheduledExecutorService executorService;
+    private final SmartHomeInvoker invoker; // uses the invoker to run commands
+    private final ScheduledExecutorService executorService; // handles timed execution
 
     public CommandScheduler(SmartHomeInvoker invoker) {
         this.invoker = invoker;
         this.executorService = Executors.newSingleThreadScheduledExecutor();
     }
 
+    // Schedules a command to run after delayMillis milliseconds
     public void schedule(Command command, long delayMillis) {
         System.out.println("Scheduling command to run after " + delayMillis + " ms");
         executorService.schedule(
@@ -22,6 +23,7 @@ public class CommandScheduler {
         );
     }
 
+    // Shuts down scheduler threads
     public void shutdown() {
         executorService.shutdown();
     }

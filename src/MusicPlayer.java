@@ -1,4 +1,4 @@
-// File: MusicPlayer.java
+// Receiver class: responsible for music playback logic
 public class MusicPlayer {
     private boolean isPlaying = false;
 

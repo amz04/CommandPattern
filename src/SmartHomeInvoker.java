@@ -3,8 +3,8 @@ import java.util.Stack;
 
 public class SmartHomeInvoker {
 
-    private final Stack<Command> undoStack = new Stack<>();
-    private final Stack<Command> redoStack = new Stack<>();
+    private final Stack<Command> undoStack = new Stack<>(); // history of executed commands
+    private final Stack<Command> redoStack = new Stack<>(); // commands that were undone
 
     // Execute a command and store it for undo
     public void executeCommand(Command command) {

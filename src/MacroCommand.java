@@ -2,7 +2,7 @@
 import java.util.List;
 
 public class MacroCommand implements Command {
-    private final List<Command> commands;
+    private final List<Command> commands; // list of commands to run
 
     public MacroCommand(List<Command> commands) {
         this.commands = commands;
@@ -10,6 +10,7 @@ public class MacroCommand implements Command {
 
     @Override
     public void execute() {
+        // Executes all commands in order
         for (Command command : commands) {
             command.execute();
         }
