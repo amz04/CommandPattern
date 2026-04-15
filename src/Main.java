@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Receivers
-        Light light = null;
+        Light light = new Light();
         AirConditioner ac = new AirConditioner();
         DoorLock doorLock = new DoorLock();
         MusicPlayer musicPlayer = new MusicPlayer();
